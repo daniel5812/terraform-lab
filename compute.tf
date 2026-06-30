@@ -6,6 +6,6 @@ module "compute" {
   instance_type     = var.instance_type
   server_name       = var.server_name
   key_name          = var.key_name
-  public_key_path   = var.public_key_path
+  public_key_value  = var.public_key_value
   common_tags       = var.common_tags
 }

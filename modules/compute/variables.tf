@@ -23,9 +23,10 @@ variable "key_name" {
   type        = string
 }
 
-variable "public_key_path" {
-  description = "Path to the public SSH key"
+variable "public_key_value" {
+  description = "Public SSH key value"
   type        = string
+  sensitive   = true
 }
 
 variable "common_tags" {

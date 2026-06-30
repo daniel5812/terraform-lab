@@ -67,3 +67,9 @@ variable "public_key_path" {
   type        = string
   default     = "./terraform-key.pub"
 }
+
+variable "public_key_value" {
+  description = "Public SSH key value"
+  type        = string
+  sensitive   = true
+}
