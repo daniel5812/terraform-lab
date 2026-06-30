@@ -11,6 +11,9 @@ jobs:
     name: Terraform Checks
     runs-on: ubuntu-latest
 
+    env:
+      TF_VAR_allowed_ssh_cidr: ${{ secrets.TF_VAR_allowed_ssh_cidr }}
+
     defaults:
       run:
         working-directory: .
